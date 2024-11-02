@@ -46,7 +46,7 @@ Ensure that the following packages are present on your system/environment:
 7. skimage
 8. cv2
 
-Once done, change the directories of the variables `img_folder`,`label_folder`, and `model_path` in `test.py` to the corresponding folders of the degraded images, clean images, and model weights respectively.
+Once done, change the directories of the variables `img_folder`,`label_folder`, and `model_path` in `test.py` to the corresponding folders of the degraded images, clean images, and model weights respectively. To visualise your results, add a function towards the end of `test.py` to visualise results using `matplotlib`. Ensure that your images are 700 x 700 pixels in dimension.
 
 Once the directories have been correctly specified, you can test the model by running,
 ```
