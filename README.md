@@ -38,7 +38,7 @@ to UNet architecture for image denoising.
   </tr>
 </table>
 
-## Quick Run  
+## Test 
 You can directly run personal noised images on my space of [**HuggingFce**](https://huggingface.co/spaces/52Hz/SUNet_AWGN_denoising).  
 
 To test the [pre-trained models](https://drive.google.com/file/d/1ViJgcFlKm1ScEoQH616nV4uqFhkg8J8D/view?usp=sharing) of denoising on your own 256x256 images, run
@@ -49,9 +49,9 @@ Here is an example command:
 ```
 python demo.py --input_dir './demo_samples/' --result_dir './demo_results' --weights './pretrained_model/denoising_model.pth'
 ```
-To test the pre-trained models of denoising on your arbitrary resolution images, run
+Once the directories have been correctly specified, you can test the model by running,
 ```
-python demo_any_resolution.py --input_dir images_folder_path --stride shifted_window_stride --result_dir save_images_here --weights path_to_models
+python test.py
 ```
 SUNset could only handle the fixed size input which the resolution in training phase same as the mostly transformer-based methods because of the attention masks are fixed. If we want to denoise the arbitrary resolution input, the shifted-window method will be applied to avoid border effect. The code of `demo_any_resolution.py` is supported to fix the problem.
 
