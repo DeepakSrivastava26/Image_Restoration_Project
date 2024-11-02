@@ -52,8 +52,6 @@ Once the directories have been correctly specified, you can test the model by ru
 ```
 python test.py
 ```
-SUNset could only handle the fixed size input which the resolution in training phase same as the mostly transformer-based methods because of the attention masks are fixed. If we want to denoise the arbitrary resolution input, the shifted-window method will be applied to avoid border effect. The code of `demo_any_resolution.py` is supported to fix the problem.
-
 ## Train  
 To train the restoration models of Denoising. You should check the following components:  
 - `training.yaml`:  
