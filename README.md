@@ -5,17 +5,14 @@
 
 
 ***
-> Abstract : Image restoration is a challenging ill-posed problem
-which also has been a long-standing issue. In the past few
-years, the convolution neural networks (CNNs) almost dominated
-the computer vision and had achieved considerable success
-in different levels of vision tasks including image restoration.
-However, recently the Swin Transformer-based model also shows
-impressive performance, even surpasses the CNN-based methods
-to become the state-of-the-art on high-level vision tasks. In this
-paper, we proposed a restoration model called SUNet which uses
-the Swin Transformer layer as our basic block and then is applied
-to UNet architecture for image denoising.
+>In this report, we tackle the task of image denoising and deblurring using a
+UNet-inspired model that incorporates elements of SUNet, a UNet variant enhanced
+with Swin Transformer blocks. Our objective is to assess this architecture’s
+performance on a validation set, with a focus on Peak Signal-to-Noise
+Ratio (PSNR) and Structural Similarity Index (SSIM) metrics. This architecture
+was selected for its capability to capture both local and global features
+through a transformer-based approach, making it well-suited for high-quality
+image restoration tasks.
 
 
 ## Network Architecture  
