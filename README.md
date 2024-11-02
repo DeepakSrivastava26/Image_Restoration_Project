@@ -32,62 +32,8 @@ Once the directories have been correctly specified, you can test the model by ru
 python test.py
 ```
 ## Train  
-To train the model on a different dataset, please go through the `.ipynb` file  
-- `training.yaml`:  
+To train the model on a different dataset, please go through the `Denoising_Model_code_final.ipynb` file. Ensure that your images are of a fixed dimension. 
 
-  ```
-    # Training configuration
-    GPU: [0,1,2,3] 
-
-    VERBOSE: False
-
-    SWINUNET:
-      IMG_SIZE: 256
-      PATCH_SIZE: 4
-      WIN_SIZE: 8
-      EMB_DIM: 96
-      DEPTH_EN: [8, 8, 8, 8]
-      HEAD_NUM: [8, 8, 8, 8]
-      MLP_RATIO: 4.0
-      QKV_BIAS: True
-      QK_SCALE: 8
-      DROP_RATE: 0.
-      ATTN_DROP_RATE: 0.
-      DROP_PATH_RATE: 0.1
-      APE: False
-      PATCH_NORM: True
-      USE_CHECKPOINTS: False
-      FINAL_UPSAMPLE: 'Dual up-sample'
-
-    MODEL:
-      MODE: 'Denoising'
-
-    # Optimization arguments.
-    OPTIM:
-      BATCH: 4
-      EPOCHS: 500
-      # EPOCH_DECAY: [10]
-      LR_INITIAL: 2e-4
-      LR_MIN: 1e-6
-      # BETA1: 0.9
-
-    TRAINING:
-      VAL_AFTER_EVERY: 1
-      RESUME: False
-      TRAIN_PS: 256
-      VAL_PS: 256
-      TRAIN_DIR: './datasets/Denoising_DIV2K/train'       # path to training data
-      VAL_DIR: './datasets/Denoising_DIV2K/test' # path to validation data
-      SAVE_DIR: './checkpoints'           # path to save models and images
-  ```
-- Dataset:  
-  The preparation of dataset in more detail, see [datasets/README.md](datasets/README.md).  
-  
-- Train:  
-  If the above path and data are all correctly setting, just simply run:  
-  ```
-  python train.py
-  ```  
 ## Result  
 
 <img src = "https://i.imgur.com/golsiWN.png" width="800">  
