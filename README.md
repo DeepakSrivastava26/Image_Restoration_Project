@@ -1,5 +1,5 @@
-# Image_Restoration_Project
- [ISCAS 2022] [SUNet: Swin Transformer with UNet for Image Denoising](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9937486)  
+# EE5179: Deep Learning for Imaging
+ Image Restoration from Noisy & Blur Images while Preserving Defects of Interest
 
 
 
