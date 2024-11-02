@@ -14,27 +14,6 @@ was selected for its capability to capture both local and global features
 through a transformer-based approach, making it well-suited for high-quality
 image restoration tasks.
 
-
-## Network Architecture  
-
-<table>
-  <tr>
-    <td colspan="2"><img src = "https://i.imgur.com/1UX5j3x.png" alt="CMFNet" width="800"> </td>  
-  </tr>
-  <tr>
-    <td colspan="2"><p align="center"><b>Overall Framework of SUNet</b></p></td>
-  </tr>
-  
-  <tr>
-    <td> <img src = "https://imgur.com/lV1CR4H.png" width="400"> </td>
-    <td> <img src = "https://imgur.com/dOjxV93.png" width="400"> </td>
-  </tr>
-  <tr>
-    <td><p align="center"><b>Swin Transformer Layer</b></p></td>
-    <td><p align="center"> <b>Dual up-sample</b></p></td>
-  </tr>
-</table>
-
 ## Test 
 Ensure that the following packages are present on your system/environment:
 1. torch 2.5.1+cu121
@@ -53,7 +32,7 @@ Once the directories have been correctly specified, you can test the model by ru
 python test.py
 ```
 ## Train  
-To train the restoration models of Denoising. You should check the following components:  
+To train the model on a different dataset, please go through the `.ipynb` file  
 - `training.yaml`:  
 
   ```
