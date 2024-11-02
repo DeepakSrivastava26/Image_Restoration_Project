@@ -39,16 +39,16 @@ to UNet architecture for image denoising.
 </table>
 
 ## Test 
-You can directly run personal noised images on my space of [**HuggingFce**](https://huggingface.co/spaces/52Hz/SUNet_AWGN_denoising).  
+Ensure that the following packages are present on your system/environment:
+1. torch
+2. torchvision
+3. mathplotlib
+4. os
+5. PIL
+6. numpy
+7. skimage
+8. cv2
 
-To test the [pre-trained models](https://drive.google.com/file/d/1ViJgcFlKm1ScEoQH616nV4uqFhkg8J8D/view?usp=sharing) of denoising on your own 256x256 images, run
-```
-python demo.py --input_dir images_folder_path --result_dir save_images_here --weights path_to_models
-```
-Here is an example command:
-```
-python demo.py --input_dir './demo_samples/' --result_dir './demo_results' --weights './pretrained_model/denoising_model.pth'
-```
 Once the directories have been correctly specified, you can test the model by running,
 ```
 python test.py
