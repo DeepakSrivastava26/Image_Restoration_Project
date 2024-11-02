@@ -1,4 +1,4 @@
-# EE5179: Deep Learning for Imaging
+# EE5179: Deep Learning for Imaging Project
  Image Restoration from Noisy & Blur Images while Preserving Defects of Interest
 
 
