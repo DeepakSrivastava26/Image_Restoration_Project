@@ -37,14 +37,14 @@ image restoration tasks.
 
 ## Test 
 Ensure that the following packages are present on your system/environment:
-1. torch
-2. torchvision
-3. mathplotlib
-4. os
-5. PIL
-6. numpy
-7. skimage
-8. cv2
+1. torch 2.5.1+cu121
+2. torchvision 0.20.1+cu121
+3. numpy 1.26.4
+4. cv2 4.10.0
+5. mathplotlib
+6. os
+7. PIL
+8. skimage
 
 Once done, change the directories of the variables `img_folder`,`label_folder`, and `model_path` in `test.py` to the corresponding folders of the degraded images, clean images, and model weights respectively. To visualise your results, add a function towards the end of `test.py` to visualise results using `matplotlib`. Ensure that your images are 700 x 700 pixels in dimension.
 
