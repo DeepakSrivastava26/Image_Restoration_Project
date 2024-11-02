@@ -32,20 +32,4 @@ Once the directories have been correctly specified, you can test the model by ru
 python test.py
 ```
 ## Train  
-To train the model on a different dataset, please go through the `Denoising_Model_code_final.ipynb` file. Ensure that your images are of a fixed dimension. 
-
-## Result  
-
-<img src = "https://i.imgur.com/golsiWN.png" width="800">  
-
-## Visual Comparison  
-
-<img src = "https://i.imgur.com/UeeOO0M.png" width="800">  
-
-<img src = "https://i.imgur.com/YavgU0r.png" width="800">  
-
-
-
-
-
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFanChiMao%2FSUNet&label=visitors&countColor=%232ccce4&style=plastic)  
+To train the model on a different dataset, please go through the `Denoising_Model_code_final.ipynb` file. Ensure that your images are of a fixed dimension. Change required directories to your images/files. Using GPU is recommended.
